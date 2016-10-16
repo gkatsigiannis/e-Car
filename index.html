@@ -9,10 +9,10 @@
 		<link href="css/style.css" rel="stylesheet">
 		<title>e-Car</title>
 	</head>
-	<body style="background-color: grey;">
+	<body>
 		<div class="container">
 			
-			<div class="jumbotron" style="background-color:#ff8f00; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+			<div class="jumbotron">
 				<nav class="navbar navbar-inverse">
 				  	<div class="container-fluid">
 				    	<div class="navbar-header">
@@ -23,8 +23,8 @@
 						    </button>
 				    	</div>
 				    	<div class="collapse navbar-collapse" id="myNavbar">
-				      		<ul class="nav navbar-nav">
-				        		<li><a href="#">Κρατήσεις</a></li>
+				      		<ul class="nav navbar-nav nav-pills">
+				        		<li class="active"><a href="#">Κρατήσεις</a></li>
 				        		<li><a href="#">Στόλος</a></li> 
 				        		<li><a href="#">Καταχώρησε το!</a></li>
 				        		<li><a href="#">Εταιρεία</a></li>
@@ -39,53 +39,83 @@
 				</nav>
 			</div>
 			<div class="row">
-				<div id="carousel-example-generic" class="carousel slide col-xs-12 col-sm-6 col-md-6" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>							
-					</ol>
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="micra.jpg" alt="micra" class="img-responsive">
-							<div class="carousel-caption">
-							</div>
-						</div>
-						<div class="item">
-								<img src="images.jpg" alt="seat" class="img-responsive">
+				<div class="container col-xs-12 col-sm-6 col-md-8">
+					<div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>							
+						</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="images/micra.jpg" alt="micra" class="img-responsive">
 								<div class="carousel-caption">
+									<h3>Προσφορά</h3>
+									<p>35&euro ανά ημέρα</p>
 								</div>
+							</div>
+							<div class="item">
+									<img src="images/seat.jpg" alt="seat" class="img-responsive">
+									<div class="carousel-caption">
+										<h3>Νικός</h3>
+										<p>Η καλύτερη εταιρεία ενοικιάσεων αυτοκινήτων</p>
+									</div>
+							</div>	
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+							</a>
 						</div>	
-						<!-- Controls -->
-						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-						</a>
-					</div>	
+					</div>
 				</div>
-				<div class="container col-xs-12 col-sm-6 col-md-6">
+				<div class="container col-xs-12 col-sm-6 col-md-4">
 				<div class ="well" >
 					<form class="form-inline">
 						<div class="form group">
-							<label for="date_start">Ημ. Παραλαβής</label>
-							<input type="date" name="date_start">
+							<div class="row">
+								<div class="control-label col-xs-5 col-sm-4 col-md-4">
+									<label for="date_start">Ημ. Παραλαβής</label>
+								</div>
+								<div class="col-xs-7">
+									<input type="date" name="date_start" required="true">
+								</div>
+							</div>
 						</div>
 						<div class="form group">
-							<label for="time_start">Ώρα Παραλαβής</label>
-							<input type="time" name="time_start">
+							<div class="row">
+								<div class="col-xs-4">
+									<label for="time_start">Ώρα Παραλαβής</label>
+								</div>
+								<div class="col-xs-8">
+									<input type="time" name="time_start">
+								</div>
+							</div>
 						</div>
 						<div class="form group">
-							<label for="date_end">Ημ. Παράδοσης</label>
-							<input type="date" name="date_end">
+							<div class="row">
+								<div class="col-xs-4">
+									<label for="date_end">Ημ. Παράδοσης</label>
+								</div>
+								<div class="col-xs-8">
+									<input type="date" name="date_end">
+								</div>
+							</div>
 						</div>
 						<div class="form group">
-							<label for="time_end">Ώρα Παράδοσης</label>
-							<input type="time" name="time_end">
+							<div class="row">
+								<div class="col-xs-4">
+									<label for="time_end">Ώρα Παράδοσης</label>
+								</div>
+								<div class="col-xs-8">
+									<input type="time" name="time_end">
+								</div>
+							</div>
 						</div>
 						<div class="form group">
 							<label for="taxitites">Αυτόματο</label>
@@ -102,13 +132,28 @@
 								<option value="2000+">2000+</option>
 							</select>
 						</div>
-						<div class="form-group">
-							<button type="button" class="btn" style="background-color:green; color:white;">Συνέχεια</button>
-						</div>
+						<button type="button" class="btn btn-block">Συνέχεια</button>
 					</form>
 				</div>
-				</div>
+			</div>
 		</div>
+		<div class="well">
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2">
+					<img src="images/iso.png" alt="iso" style="height:60px;">
+				</div>
+				<div class="col-xs-10 col-sm-10 col-md-10">
+					<p>
+						<br>
+						<a href="#">Όροι Χρήσης</a>
+						<a href="#">Προσωπικά Δεδομένα</a>
+						<a href="#">Εταιρεία</a>
+						<a href="#">Επικοινωνία</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
