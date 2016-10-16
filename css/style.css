@@ -1,2 +1,8 @@
 body{background-color: grey;}
-#g{padding: 2px; background-color: red;}
+.container > .jumbotron{background-color:#ff8f00; padding-bottom:0px; padding-left:0px; padding-right:0px;}
+#carousel-example-generic{background-color:#2E2E2E}
+.img-responsive{margin: auto;}
+.btn-block{background-color:green; color:white;}
+.container > .well{background-color:#ff8f00;}
+.well > .row > .col-md-10 > p > a{ color:black; padding-right:0.6em;}
+.well > .row > .col-md-10 > p{padding-left:20%;}
