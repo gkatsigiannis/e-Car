@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>e-Car</title>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="jumbotron">
+				<nav class="navbar navbar-inverse">
+				  	<div class="container-fluid">
+				    	<div class="navbar-header">
+				      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    	<span class="icon-bar"></span> 
+						    </button>
+				    	</div>
+				    	<div class="collapse navbar-collapse" id="myNavbar">
+				      		<ul class="nav navbar-nav">
+				        		<li><a href="index.html">Κρατήσεις</a></li>
+				        		<li><a href="fleet.html">Στόλος</a></li> 
+				        		<li><a href="#">Καταχώρησε το!</a></li>
+				        		<li><a href="company.html">Εταιρεία</a></li>
+				        		<li><a href="contact.html">Επικοινωνία</a></li>
+				      		</ul>
+				      		<ul class="nav navbar-nav navbar-right">
+	      						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    					</ul>
+				    	</div>
+				  	</div>
+				</nav>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<form id='register'  >
+<fieldset >
+<legend>Sign up</legend>
+<input type='hidden' name='submitted' id='submitted' value='1'/><br>
+<label for='name' >Your Full Name*: </label>
+<input type='text' name='name' id='name' maxlength="50" /><br>
+<label for='email' >Email Address*:</label>
+<input type='text' name='email' id='email' maxlength="50" /><br>
+ 
+<label for='username' >UserName*:</label>
+<input type='text' name='username' id='username' maxlength="50" /><br>
+ 
+<label for='password' >Password*:</label>
+<input type='password' name='password' id='password' maxlength="50" /><br>
+<input type='submit' name='Submit' value='Submit' />
+ 
+</fieldset>
+</form>
+<br>
+<br>
+
+			<div class="well">
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2">
+						<img src="images/iso.png" alt="iso" style="height:60px;">
+					</div>
+					<div class="col-xs-10 col-sm-10 col-md-10">
+						<p>
+							<br>
+							<a href="terms.html">Όροι Ενοικιάσεων Aυτοκινήτων</a>
+							<a href="privacy.html">Προσωπικά Δεδομένα</a>
+							<a href="company.html">Εταιρεία</a>
+							<a href="contact.html">Επικοινωνία</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
