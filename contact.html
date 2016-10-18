@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>e-Car</title>
+	</head>
+	<body>
+		<div class="container">
+			
+			<div class="jumbotron">
+				<nav class="navbar navbar-inverse">
+				  	<div class="container-fluid">
+				    	<div class="navbar-header">
+				      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    	<span class="icon-bar"></span> 
+						    </button>
+				    	</div>
+				    	<div class="collapse navbar-collapse" id="myNavbar">
+				      		<ul class="nav navbar-nav">
+				        		<li><a href="#">Κρατήσεις</a></li>
+				        		<li><a href="stolos.html">Στόλος</a></li> 
+				        		<li><a href="#">Καταχώρησε το!</a></li>
+				        		<li><a href="etairia.html">Εταιρεία</a></li>
+				        		<li class="active"><a href="contact.html">Επικοινωνία</a></li>
+				      		</ul>
+				      		<ul class="nav navbar-nav navbar-right">
+	      						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    					</ul>
+				    	</div>
+				  	</div>
+				</nav>
+			</div>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading" style="text-align:center;">Στοιχεία Επικοινωνίας</div>
+					<div class="panel-body">
+						<ul>
+							<li>Διεύθυνση: Αεροδρόμιο "Ελ. Βενιζέλος", Σπάτα 19004</li>
+							<li>Τηλέφωνο: 210-8793569</li>
+							<li>Email: info@e-car.gr</li>
+						<ul>
+					</div>
+					<div id="map" style="width:auto;height:400px;background:yellow"></div>
+				</div>
+
+			</div>
+
+			<div class="well">
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2">
+						<img src="images/iso.png" alt="iso" style="height:60px;">
+					</div>
+					<div class="col-xs-10 col-sm-10 col-md-10">
+						<p>
+							<br>
+							<a href="#">Όροι Χρήσης</a>
+							<a href="#">Προσωπικά Δεδομένα</a>
+							<a href="#">Εταιρεία</a>
+							<a href="#">Επικοινωνία</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			function initMap() {
+				var myLatLng1 = {lat: 37.936125, lng: 23.946736};
+				var myLatLng2 = {lat: 37.946139, lng: 23.642303};
+				var myLatLng3 = {lat: 37.981645, lng: 23.756069};
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 4,
+				  center: myLatLng1
+				});
+
+				var marker = new google.maps.Marker({
+				  position: myLatLng1,
+				  map: map,
+				  title: 'Αεροδρόμιο "Ελ. Βενιζέλος"'
+				});
+				
+				var marker = new google.maps.Marker({
+				  position: myLatLng2,
+				  map: map,
+				  title: 'Λιμάνι Πειραιά'
+				});
+				
+				var marker = new google.maps.Marker({
+				  position: myLatLng3,
+				  map: map,
+				  title: 'Λεωφόρος Βασιλίσης Σοφίας 90'
+				});
+				
+			}
+
+
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	</body>
+</html>
