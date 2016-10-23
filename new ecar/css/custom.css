@@ -106,6 +106,12 @@
   transition: opacity ease-in-out 500ms;
   z-index: 1;
 }
+	h6 {
+    text-align: left;
+    color: red;
+	font-size: 30px;
+	font-family: Trebuchet MS;
+}
 #main-slider .prev,
 #main-slider .next {
   position: absolute;
