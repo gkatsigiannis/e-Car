@@ -78,85 +78,75 @@
     </div>
 
 	
-	<div class="section">
-	    <div class="container">
-        <form class="form-horizontal" method="psot" action="">
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="car">Αυτοκίνητο:</label>
-              <div class="col-sm-4">
-                  <select class="form-control" id="car" placeholder="Select car">
-                    <option>Audi A6</option>
-                    <option>BMW 116</option>
-                    <option>Seat Mii</option>
-                    <option>Smart ForTwo</option>
-                    <option>Suzuki Jimny</option>
-                    <option>Toyota Aygo</option>
-                    <option>VW Polo</option>
-                  </select>
-              </div>
-            </div>
-    		    <div class="form-group">
-      				<label class="control-label col-sm-2" for="from">Κατάστημα παραλαβής:</label>
-      				<div class="col-sm-4">
-        					<select class="form-control" id="from" placeholder="Enter email">
-        						<option>Κατάστημα Αεροδρομίου Ελ.Βενιζέλου</option>
-        						<option>Κατάστημα Λιμένα Πειραιά</option>
-        						<option>Κατάστημα Βασ.Σοφίας 90, Αθήνα</option>
-        					</select>
+    	<div class="section">
+    	    <div class="container">
+            <form class="form-horizontal" method="psot" action="">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="car">Αυτοκίνητο:</label>
+                  <div class="col-sm-4">
+                      <select class="form-control" id="car" placeholder="Select car">
+                        <option>Audi A6</option>
+                        <option>BMW 116</option>
+                        <option>Seat Mii</option>
+                        <option>Smart ForTwo</option>
+                        <option>Suzuki Jimny</option>
+                        <option>Toyota Aygo</option>
+                        <option>VW Polo</option>
+                      </select>
+                  </div>
+                </div>
+        		    <div class="form-group">
+          				<label class="control-label col-sm-2" for="from">Κατάστημα παραλαβής:</label>
+          				<div class="col-sm-4">
+            					<select class="form-control" id="from" placeholder="Enter email">
+            						<option>Κατάστημα Αεροδρομίου Ελ.Βενιζέλου</option>
+            						<option>Κατάστημα Λιμένα Πειραιά</option>
+            						<option>Κατάστημα Βασ.Σοφίας 90, Αθήνα</option>
+            					</select>
+          				</div>
+        				</div>
+        				<div class="form-group">
+          				<label class="control-label col-sm-2" for="to">Κατάστημα παραλαβής:</label>
+          				<div class="col-sm-4">
+            					<select class="form-control" id="to" placeholder="Enter email">
+            						<option>Κατάστημα Αεροδρομίου Ελ.Βενιζέλου</option>
+            						<option>Κατάστημα Λιμένα Πειραιά</option>
+            						<option>Κατάστημα Βασ.Σοφίας 90, Αθήνα</option>
+            					</select>
+          				</div>
+        				</div>
+        				<div class="form-group">
+          				<label class="control-label col-sm-2" for="date_start">Ημέρα Παραλαβής:</label>
+          				<div class="col-sm-8">
+            					<input type="date" name="date_start" required="true">
+          				</div>
+        				</div>
+        				<div class="form-group">
+          				<label class="control-label col-sm-2" for="time_start">Ώρα Παραλαβής</label>
+          				<div class="col-sm-8">
+            					<input type="time" name="time_start">
+          				</div>
+        				</div>
+        				<div class="form-group">
+          				<label class="control-label col-sm-2" for="date_start">Ημέρα Παράδοσης:</label>
+          				<div class="col-sm-8">
+            					<input type="date" name="date_start" required="true">
+          				</div>
+        				</div>
+        				<div class="form-group">
+          				<label class="control-label col-sm-2" for="time_start">Ώρα Παράδοσης</label>
+          				<div class="col-sm-8">
+            					<input type="time" name="time_start">
+          				</div>
+        				</div>
+        				<div class="form-group">
+          				<div class="col-sm-offset-2 col-sm-10">
+            					<button type="submit" class="btn btn-default">Κράτηση</button>
+          				</div>
       				</div>
-    				</div>
-    				<div class="form-group">
-      				<label class="control-label col-sm-2" for="to">Κατάστημα παραλαβής:</label>
-      				<div class="col-sm-4">
-        					<select class="form-control" id="to" placeholder="Enter email">
-        						<option>Κατάστημα Αεροδρομίου Ελ.Βενιζέλου</option>
-        						<option>Κατάστημα Λιμένα Πειραιά</option>
-        						<option>Κατάστημα Βασ.Σοφίας 90, Αθήνα</option>
-        					</select>
-      				</div>
-    				</div>
-    				<div class="form-group">
-      				<label class="control-label col-sm-2" for="date_start">Ημέρα Παραλαβής:</label>
-      				<div class="col-sm-8">
-        					<input type="date" name="date_start" required="true">
-      				</div>
-    				</div>
-    				<div class="form-group">
-      				<label class="control-label col-sm-2" for="time_start">Ώρα Παραλαβής</label>
-      				<div class="col-sm-8">
-        					<input type="time" name="time_start">
-      				</div>
-    				</div>
-    				<div class="form-group">
-      				<label class="control-label col-sm-2" for="date_start">Ημέρα Παράδοσης:</label>
-      				<div class="col-sm-8">
-        					<input type="date" name="date_start" required="true">
-      				</div>
-    				</div>
-    				<div class="form-group">
-      				<label class="control-label col-sm-2" for="time_start">Ώρα Παράδοσης</label>
-      				<div class="col-sm-8">
-        					<input type="time" name="time_start">
-      				</div>
-    				</div>
-<<<<<<< HEAD
-    				<div class="form-group">
-      				<div class="col-sm-offset-2 col-sm-10">
-        					<button type="submit" class="btn btn-default">Κράτηση</button>
-      				</div>
-=======
-  				</div>
-
-
-  				<div class="form-group">
-    				<div class="col-sm-offset-2 col-sm-10">
-    					<a class="btn btn-default" href="confirmation.html">Κράτηση</a>
->>>>>>> origin/master
-    				</div>
-			</form>
-	    
-		</div>
-	</div>
+    			</form>  
+    		</div>
+    	</div>
 
 	    <!-- Footer -->
         <div class="footer">
@@ -192,9 +182,9 @@
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
 		
-		<!-- Scrolling Nav JavaScript -->
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/scrolling-nav.js"></script>		
+    		<!-- Scrolling Nav JavaScript -->
+    		<script src="js/jquery.easing.min.js"></script>
+    		<script src="js/scrolling-nav.js"></script>		
 
     </body>
 </html>
