@@ -118,7 +118,22 @@
 				<div class="section-title">
 				<h1>Σχόλια</h1>
 				</div>				
-			
+					<form  name="myForm" id="myForm" method="post" >
+					<p>
+					<label for="username" 'required'>Username</label>
+					<input type="text" name="username" id="username"/>
+					</p>
+
+					<p>
+					<label for="message">Message</label>
+					<textarea cols="40" rows="10" name="message" id="message"></textarea>
+					</p>
+					<br/>
+					<input type="submit" name="submit" value="Αποστολή">
+					<!--To submit που αποστέλνει τη φόρμα-->
+					</form>
+					<br>
+
 				<div class="col-xs-12">					
 					<div class="thumbnail">
 						<ul id="comments" class="comments">
