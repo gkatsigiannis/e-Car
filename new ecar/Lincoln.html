@@ -59,7 +59,7 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="fleet.html">Στόλος</a></li>
                         <li><a href="contact-us.html">Επικοινωνία</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Είσοδος</a></li>
+                        <li><a href="#" class="launch-modal" data-modal-id="modal-login"><span class="glyphicon glyphicon-log-in"></span> Είσοδος</a></li>
                         <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Εγγραφή</a></li>
                     </ul>
                 </div>
@@ -159,8 +159,8 @@
                     <div class="col-footer col-md-4 col-xs-6">
                         <h3>Επικοινωνία</h3>
                         <b>Διεύθυνση:</b> Αεροδρόμιο "Ελ. Βενιζέλος", Σπάτα 19004<br>
-                        <b>Τηλέφωνο:</b> 210-8793569<br>
-                        <b>Email:</b><a href="mailto:info@e-car.gr">info@e-car.gr</a>
+                        <span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;210-8793569<br>
+                        <span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@e-car.gr">&nbsp;&nbsp;info@e-car.gr</a>
                     </div>              
                     <div class="col-footer col-md-4 col-xs-6">
                     </div>
@@ -181,10 +181,56 @@
             </div>
         </div>
 
+<!-- MODAL -->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-login-label">Είσοδος στο e-Car Club!</h3>
+        				<p>Εισάγετε το όνομα χρήστη και τον κωδικό σας:</p>
+        			</div>
+        			
+        			<div class="modal-body">
+	                    <form role="form" action="" method="post" class="login-form">
+	                    	<div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span>
+                                    <input type="text" name="form-username" placeholder="Username" class="form-username form-control" id="form-username" required="">
+                                </div>
+                            </div>
+	                        <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span>
+                                    <input type="password" name="form-password" placeholder="Password" class="form-password form-control" id="form-password" required="">
+                                </div>
+	                        </div>
+                            <div class="text-right">
+	                           <button type="submit" class="btn">Σύνδεση</button>
+                               <button type="reset" class="btn">Ακύρωση</button>
+                            </div>
+	                    </form>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+		
+
         <!-- Javascripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/scripts.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
 		
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
