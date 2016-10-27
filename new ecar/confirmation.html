@@ -67,62 +67,58 @@
             </div>
         </header><!--/header-->
 
-	 <!-- Page Title -->
-	 <div class="section section-breadcrumbs">
-		  <div class="container">
-        <div class="row">
-			 	 <div class="col-md-12">
-					 <h1>Επιβεβαιωση κρατησης</h1>
-				  </div>
-		    </div>
-      </div>
-    </div>
-	
-	<div class="section">
-	    <div class="container">
-	    	<div class="row">
-	    	<div class="col col-md-12">
-	    		<h4>Η κρατησή σας περιλαμβάνει τα παρακάτω στοιχεία:</h6>
-	    	</div>
-	    	</div>
-        	<div class="row">
-                    <div class="col col-md-2 col-sm-1">
-                    	<p><strong>Κατάστημα Παραλαβής: </strong></p>
-                    	<p><strong>Κατάστημα Παράδοσης: </strong></p>
-                    	<p><strong>Ημέρα Παραλαβής: </strong></p>
-                    	<p><strong>Ώρα Παραλαβής: </strong></p>
-                    	<p><strong>Ημέρα Παράδοσης: </strong></p>
-                    	<p><strong>Ώρα Παράδοσης: </strong></p>
-                    	<p><strong>Αυτοκίνητο: </strong></p>
-                    	<br>
-                    	<h4>Τιμή: </h4>
-                    </div>              
-                    <div class="col col-md-3 col-sm-1">
-                    	<p>Κατάστημα Αεροδρομίου Ελ. Βενιζέλου</p>
-                    	<p>Κατάστημα Λιμένα Πειραιά</p>
-                    	<p>12/11/16</p>
-                    	<p>12:00</p>
-                    	<p>17/11/16</p>
-                    	<p>12:00</p>
-                    	<p>Smart ForTwo</p>
-                    	<br>
-                    	<h4>100€</h4>
-                    </div>
-            </div>
-            <div class="row">
-            	<div class="col col-md-1">
-            	</div>
-            	<div class="col col-md-1">
-            		<a class="btn btn-default" href="reservation.html">Πίσω</a>
-            	</div>
-            	<div class="col col-md-1">
-            		<a class="btn btn-default" href="myreservation.html">Επιβεβαίωση Κράτησης</a>
-            	</div>
-            </div>
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+	        	<div class="row">
+				 	<div class="col-md-12">
+						<h1>Επιβεβαιωση κρατησης</h1>
+					</div>
+			    </div>
+	      	</div>
+	    </div>
 
-	    
+	    <!-- Wizard -->
+	  	<div class="wizard">
+	        <div class="wizard-inner">
+	            <div class="connecting-line"></div>
+	                <ul class="nav nav-tabs" role="tablist">
+	                    <li role="presentation" class="disabled">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step2" role="tab" title="Συμπλήρωση στοιχείων">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-pencil"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="disabled">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step3" role="tab" title="Επιβεβαίωση">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-picture"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="active">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="complete" role="tab" title="Ολοκλήρωση">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-ok"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	      	</div>
+	    </div>
+
+		<!-- Sucess Message -->
+		<div class="section">
+		    <div class="container">
+	            <div class="panel" style="background-color: #aec62c;">
+	                <div class="panel-heading text-center">
+	                    <h4 style="color: white;">Η κράτηση σας ολοκληρώθηκε. Ευχαριστούμε πολύ.</h4>
+	                </div>
+	            </div>
+			</div>
 		</div>
-	</div>
 
 	    <!-- Footer -->
 	    <div class="footer">
@@ -207,5 +203,42 @@
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
+		<!-- Script for Wizard -->
+		<script>$(document).ready(function () {
+		    //Initialize tooltips
+		    $('.nav-tabs > li a[title]').tooltip();
+		    
+		    //Wizard
+		    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+		        var $target = $(e.target);
+		    
+		        if ($target.parent().hasClass('disabled')) {
+		            return false;
+		        }
+		    });
+
+		    $(".next-step").click(function (e) {
+
+		        var $active = $('.wizard .nav-tabs li.active');
+		        $active.next().removeClass('disabled');
+		        nextTab($active);
+
+		    });
+		    $(".prev-step").click(function (e) {
+
+		        var $active = $('.wizard .nav-tabs li.active');
+		        prevTab($active);
+
+		    });
+		});
+
+			function nextTab(elem) {
+			    $(elem).next().find('a[data-toggle="tab"]').click();
+			}
+			function prevTab(elem) {
+			    $(elem).prev().find('a[data-toggle="tab"]').click();
+			}
+		</script>
 	</body>
 </html>

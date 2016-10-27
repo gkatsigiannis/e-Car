@@ -41,6 +41,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+        <!--Header -->
         <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -65,57 +66,83 @@
                     </ul>
                 </div>
             </div>
-        </header><!--/header-->
+        </header>
 
-	 <!-- Page Title -->
-	 <div class="section section-breadcrumbs">
-		  <div class="container">
-        <div class="row">
-			 	 <div class="col-md-12">
-					 <h1>Η κρατηση σας</h1>
-				  </div>
-		    </div>
-      </div>
-    </div>
-	
-	<div class="section">
-	    <div class="container">
-	    	<div class="row">
-	    	<div class="col col-md-3">
-	    		<h4><strong>Κωδικός Κράτησης:</strong></h4>
-	    	</div>
-	    	<div class="col col-md-2">
-	    		<h4>000001</h6>
-	    	</div>
-	    	</div>
-        	<div class="row">
-                    <div class="col col-md-3">
-                    	<p><strong>Κατάστημα Παραλαβής: </strong></p>
-                    	<p><strong>Κατάστημα Παράδοσης: </strong></p>
-                    	<p><strong>Ημέρα Παραλαβής: </strong></p>
-                    	<p><strong>Ώρα Παραλαβής: </strong></p>
-                    	<p><strong>Ημέρα Παράδοσης: </strong></p>
-                    	<p><strong>Ώρα Παράδοσης: </strong></p>
-                    	<p><strong>Αυτοκίνητο: </strong></p>
-                    	<br>
-                    	<h4>Τιμή: </h4>
-                    </div>              
-                    <div class="col col-md-3 ">
-                    	<p>Κατάστημα Αεροδρομίου Ελ. Βενιζέλου</p>
-                    	<p>Κατάστημα Λιμένα Πειραιά</p>
-                    	<p>12/11/16</p>
-                    	<p>12:00</p>
-                    	<p>17/11/16</p>
-                    	<p>12:00</p>
-                    	<p>Smart ForTwo</p>
-                    	<br>
-                    	<h4>100€</h4>
-                    </div>
-            </div>
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+	        	<div class="row">
+				 	<div class="col-md-12">
+						<h1>Η κρατηση σας</h1>
+					</div>
+			    </div>
+	      	</div>
+	    </div>
 
-	    
+        <!-- Wizard -->
+	  	<div class="wizard">
+	        <div class="wizard-inner">
+	            <div class="connecting-line"></div>
+	                <ul class="nav nav-tabs" role="tablist">
+	                    <li role="presentation" class="disabled">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step2" role="tab" title="Συμπλήρωση στοιχείων">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-pencil"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="active">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step3" role="tab" title="Επιβεβαίωση">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-picture"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="disabled">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="complete" role="tab" title="Ολοκλήρωση">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-ok"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	      	</div>
+	  	</div>
+
+		<!-- Reservation -->
+		<div class="section">
+		    <div class="container">
+		    	<div class="modal-content">
+	    			<div class="modal-header">
+						<h3 class="modal-title">Στοιχεία Κράτησης</h3>
+					</div>
+					<div class="modal-body">
+				    	<div class="row">
+					    	<div class="col col-md-6">
+					    		<img src="img/cars/smart.jpg" alt="smart" class="img-responsive">
+					    	</div>
+			            	<div class="col col-md-6">
+			            		<h4><strong>Κωδικός Κράτησης: </strong>000001</h4>
+			                    <p><strong>Κατάστημα Παραλαβής: </strong>Κατάστημα Αεροδρομίου Ελ. Βενιζέλου</p>
+			                   	<p><strong>Κατάστημα Παράδοσης: </strong>Κατάστημα Λιμένα Πειραιά</p>
+			                   	<p><strong>Ημέρα Παραλαβής: </strong>12/11/16</p>
+			                   	<p><strong>Ώρα Παραλαβής: </strong>12:00</p>
+			                   	<p><strong>Ημέρα Παράδοσης: </strong>17/11/16</p>
+			                   	<p><strong>Ώρα Παράδοσης: </strong>12:00</p>
+			                   	<p><strong>Αυτοκίνητο: </strong>Smart For Two</p>
+			                   	<br>
+			                   	<h4>Σύνολο: 100€</h4>
+			                </div> 
+			                <div class="text-right">
+				                <a href="confirmation.html" class="btn btn-default">Επιβεβαίωση</a>
+				                <a href="reservation.html" class="btn btn-default">Ακύρωση</a>
+				            </div>         
+			            </div>
+			        </div>
+			    </div>
+			</div>
 		</div>
-	</div>
 
 	    <!-- Footer -->
 	    <div class="footer">
@@ -200,5 +227,43 @@
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
+
+		<!-- Script for Wizard -->
+		<script>$(document).ready(function () {
+		    //Initialize tooltips
+		    $('.nav-tabs > li a[title]').tooltip();
+		    
+		    //Wizard
+		    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+		        var $target = $(e.target);
+		    
+		        if ($target.parent().hasClass('disabled')) {
+		            return false;
+		        }
+		    });
+
+		    $(".next-step").click(function (e) {
+
+		        var $active = $('.wizard .nav-tabs li.active');
+		        $active.next().removeClass('disabled');
+		        nextTab($active);
+
+		    });
+		    $(".prev-step").click(function (e) {
+
+		        var $active = $('.wizard .nav-tabs li.active');
+		        prevTab($active);
+
+		    });
+		});
+
+			function nextTab(elem) {
+			    $(elem).next().find('a[data-toggle="tab"]').click();
+			}
+			function prevTab(elem) {
+			    $(elem).prev().find('a[data-toggle="tab"]').click();
+			}
+		</script>
 	</body>
 </html>
