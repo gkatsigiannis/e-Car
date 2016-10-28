@@ -1316,4 +1316,10 @@ span.round-tab:hover {
 
 #success-panel > .panel-heading > h4 {color: white;}
 
+/*btn-danger*/
+.btn-danger {
+	background-color: #d9534f;
+	border-color: #d43f3a;
+	color: #fff;
+}
 
