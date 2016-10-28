@@ -92,7 +92,7 @@
 	                        </a>
 	                    </li>
 	                    <li role="presentation" class="active">
-	                        <a href="reservation.html" data-toggle="tab" aria-controls="step3" role="tab" title="Επιλογή Οχήματος">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step3" role="tab" title="Επιβεβαίωση">
 	                            <span class="round-tab">
 	                                <i class="glyphicon glyphicon-picture"></i>
 	                            </span>
@@ -110,93 +110,37 @@
 	      	</div>
 	  	</div>
 
-	  	<!-- Available Cars -->
-	  	<div class="section">
+		<!-- Reservation -->
+		<div class="section">
 		    <div class="container">
-			    <div class="panel panel-deafult" id="available-panel" >
-			    	<div class="panel-heading">
-			    		<h4>Διαθέσιμα Όχημα</h4>
-			   		</div>
-			   		<div class="panel-body">
-			    		<div class="col-xs-12 col-sm-6 col-md-4">
-				    		<img src="img/cars/smart.jpg" alt="smart" id="panel-img">
-				    	</div>
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<h4>Smart for Two 900cc</h4>
-				   			<span class="help-block">Αυτόματο, AC</span>
-				   			<a href="smart.html" class="help-block"><u>Λεπτομέριες</u></a>
-			    		</div>
-			    		<br>
-			    		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-				    		<h3>35&euro;</h3>
-				   			<a href="confirmation.html" class="btn btn-default btn-block">Κράτηση</a>
-				   		</div>
-			   		</div>
-			   		<hr>
-			    	<div class="panel-body">
-			    		<div class="col-xs-12 col-sm-6 col-md-4">
-			    			<img src="img/cars/aygo.jpg" alt="aygo" id="panel-img">
-			    		</div>
-			    		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<h4>Toyota Aygo 1000cc</h4>
-				   			<span class="help-block">Αυτόματο, AC</span>
-				   			<a href="aygo.html" class="help-block"><u>Λεπτομέριες</u></a>
-				   		</div>
-				   		<br>
-			    		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-			    			<h3>40&euro;</h3>
-			    			<a href="confirmation.html" class="btn btn-default btn-block">Κράτηση</a>
-			    		</div>
-			   		</div>
-			    	<hr>
-			    	<div class="panel-body">
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<img src="img/cars/mii.jpg" alt="mii" id="panel-img">
-				   		</div>
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<h4>Seat Mii 1200cc</h4>
-				   			<span class="help-block">Αυτόματο, AC</span>
-				   			<a href="mii.html" class="help-block"><u>Λεπτομέριες</u></a>
-				   		</div>
-				   		<br>
-				   		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-			    			<h3>40&euro;</h3>
-			    			<a href="confirmation.html" class="btn btn-default btn-block">Κράτηση</a>
-			    		</div>
-		    		</div>
-		    		<hr>
-			    	<div class="panel-body">
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<img src="img/cars/civic.jpg" alt="civic" id="panel-img">
-				   		</div>
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<h4>Honada Civic 1600cc</h4>
-				   			<span class="help-block">Χειροκίνητο, AC</span>
-				   			<a href="civic.html" class="help-block"><u>Λεπτομέριες</u></a>
-				   		</div>
-				   		<br>
-				   		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-			    			<h3>50&euro;</h3>
-			    			<a href="confirmation.html" class="btn btn-default btn-block">Κράτηση</a>
-			    		</div>
-		    		</div>
-		    		<hr>
-			    	<div class="panel-body">
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<img src="img/cars/116.jpg" alt="116" id="panel-img">
-				   		</div>
-				   		<div class="col-xs-12 col-sm-6 col-md-4">
-				   			<h4>ΒMW 116 1600cc</h4>
-				   			<span class="help-block">Αυτόματο, AC</span>
-				   			<a href="116.html" class="help-block"><u>Λεπτομέριες</u></a>
-				   		</div>
-				   		<br>
-				   		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-			    			<h3>70&euro;</h3>
-			    			<a href="confirmation.html" class="btn btn-default btn-block">Κράτηση</a>
-			    		</div>
-		    		</div>
-		    	</div>   	
+		    	<div class="modal-content">
+	    			<div class="modal-header">
+						<h3 class="modal-title">Στοιχεία Κράτησης</h3>
+					</div>
+					<div class="modal-body">
+				    	<div class="row">
+					    	<div class="col col-md-6">
+					    		<img src="img/cars/smart.jpg" alt="smart" class="img-responsive">
+					    	</div>
+			            	<div class="col col-md-6">
+			            		<h4><strong>Κωδικός Κράτησης: </strong>000001</h4>
+			                    <p><strong>Κατάστημα Παραλαβής: </strong>Κατάστημα Αεροδρομίου Ελ. Βενιζέλου</p>
+			                   	<p><strong>Κατάστημα Παράδοσης: </strong>Κατάστημα Λιμένα Πειραιά</p>
+			                   	<p><strong>Ημέρα Παραλαβής: </strong>12/11/16</p>
+			                   	<p><strong>Ώρα Παραλαβής: </strong>12:00</p>
+			                   	<p><strong>Ημέρα Παράδοσης: </strong>17/11/16</p>
+			                   	<p><strong>Ώρα Παράδοσης: </strong>12:00</p>
+			                   	<p><strong>Αυτοκίνητο: </strong>Smart For Two</p>
+			                   	<br>
+			                   	<h4>Σύνολο: 100€</h4>
+			                </div> 
+			                <div class="text-right">
+				                <a href="confirmation.html" class="btn btn-default">Επιβεβαίωση</a>
+				                <a href="reservation.html" class="btn btn-default">Ακύρωση</a>
+				            </div>         
+			            </div>
+			        </div>
+			    </div>
 			</div>
 		</div>
 

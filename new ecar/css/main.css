@@ -1289,3 +1289,31 @@ span.round-tab:hover {
         left: 35%;
     }
 }
+
+/*reservation.html*/
+#reservation-pills > li.active > a {background-color: #aec62c;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1.3em;}
+
+#reservation-pills > li > a {background-color: white;
+  font-family: 'Lato', sans-serif;
+  color: #53555c;
+  font-size: 1.3em;}
+
+/*myreservation.html*/
+#available-panel {padding-left: 15%; padding-right: 20%}
+
+#available-panel > .panel-heading {background-color: #aec62c;}
+
+#available-panel > .panel-heading > h4 {color: white;}
+
+#panel-img{height: 100px;}
+
+/*confirmation.html*/
+#success-panel > .panel-heading {background-color: #aec62c;}
+
+#success-panel > .panel-heading > h4 {color: white;}
+
+
