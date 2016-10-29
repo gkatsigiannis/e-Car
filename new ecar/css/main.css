@@ -1330,3 +1330,11 @@ span.round-tab:hover {
 
 #fleet-img > a {right: 30px; bottom: 10px; position: absolute;}
 
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
