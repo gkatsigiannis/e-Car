@@ -117,7 +117,7 @@
 				<div class="modal-body">
                     <ul class="nav nav-pills nav-justified" id="reservation-pills">
                         <li class="active"><a href="#reservation-tab" data-toggle="tab"><b>Κάνε Κράτηση</b></a></li>
-                        <li><a href="#modify-tab" data-toggle="tab"><b>Διαχείρηση Κράτησης</b></a></li>
+                        <li><a href="#manage-tab" data-toggle="tab"><b>Διαχείρηση Κράτησης</b></a></li>
                     </ul>
                     <br>
                     <div class="tab-content">
@@ -174,18 +174,18 @@
         		      			</div>
         		    		</form>
                         </div>
-                        <div class="tab-pane" id="modify-tab">
+                        <div class="tab-pane" id="manage-tab">
                             <form class="form-horizontal col-sm-offset-6" method="post" action="">
                                 <div class="form-group">
                                     <label class="control-label col-sm-4" for="code">Κωδικός Κράτησης:</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" name="code" required="">
+                                        <input class="form-control" type="text" name="code" required="true">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-4" for="surname">Επώνυμο:</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" name="surname" required="">
+                                        <input class="form-control" type="text" name="surname" required="true" minlength="2">
                                     </div>
                                 </div>
                                 <div class="form-group">
