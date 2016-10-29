@@ -1330,7 +1330,6 @@ span.round-tab:hover {
 
 #fleet-img > a {right: 30px; bottom: 10px; position: absolute;}
 
-<<<<<<< HEAD
 
 .carousel-inner > .item > img {
     position: absolute;
@@ -1339,9 +1338,8 @@ span.round-tab:hover {
     min-width: 100%;
     height: 500px;
 }
-=======
+
 /*navbar*/
 .navbar-collapse {
   max-height: 490px;
 }
->>>>>>> origin/master
