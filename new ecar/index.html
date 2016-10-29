@@ -167,44 +167,47 @@
                 
                 <form class="form-inline" method="post" action="">
                     <div class="row">
-                        <div class="form-group col-sm-5 col-md-4">
+                        <div class="form-group col-sm-5 col-md-5">
                           <label for="date_start">Ημ. Παραλαβής:</label>
                           <input type="date" class="form-control" id="date_start" required="">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4">
+                        <div class="form-group col-sm-4 col-md-5">
                           <label for="time_start">Ώρα Παραλαβής:</label>
                           <input type="time" class="form-control" id="time_start" required="">
                         </div>
-                        <div class="form group col-sm-3 col-md-3">
-                            <label for="taxitites">Αυτόματο</label>
-                            <input type="radio" name="taxitites" value="Αυτόματο">&nbsp;&nbsp;
-                            <label for="taxitites">Με Ταχύτητες</label>
-                            <input type="radio" name="taxitites" value="Με Ταχύτητες" checked="">
-                        </div>
-                        
                     </div>
                     <br>
                     <div class="row">
-                        <div class="form-group col-sm-5 col-md-4">
+                        <div class="form-group col-sm-5 col-md-5">
                           <label for="date_end">Ημ. Παραδοσης:</label>
                           <input type="date" class="form-control" id="date_end" required="">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4">
+                        <div class="form-group col-sm-4 col-md-5">
                           <label for="time_end">Ώρα Παράδοσης:</label>
                           <input type="time" class="form-control" id="time_end" required="">
                         </div>
-                        <div class="form group col-sm-3 col-md-4">
-                            <label for="kivika">Κυβικά</label>
-                            <select name="kivika" class="form-control">
-                                <option value="900-1299">900-1299</option>
-                                <option value="1300-1599">1300-1599</option>
-                                <option value="1600-1999">1600-1999</option>
-                                <option value="2000+">2000+</option>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-sm-5 col-md-5">
+                            <label class="control-label" for="to">Κατ. Παραλαβής:</label>
+                            <select class="form-control" id="to">
+                                <option>Κατάστημα Αεροδρομίου Ελ.Βενιζέλου</option>
+                                <option>Κατάστημα Λιμένα Πειραιά</option>
+                                <option>Κατάστημα Βασ.Σοφίας 90, Αθήνα</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-5">
+                            <label class="control-label" for="to">Κατ. Παράδοσης:</label>
+                            <select class="form-control" id="to">
+                                <option>Κατάστημα Αεροδρομίου Ελ.Βενιζέλου</option>
+                                <option>Κατάστημα Λιμένα Πειραιά</option>
+                                <option>Κατάστημα Βασ.Σοφίας 90, Αθήνα</option>
                             </select>
                         </div>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-default" style="margin-left:50%; margin-right:50%;">Αναζήτηση</button>
+                    <button type="submit" class="btn btn-default col-md-offset-9">Αναζήτηση</button>
                 </form>
             </div>
         </div>
