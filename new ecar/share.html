@@ -112,32 +112,33 @@
                                         <input type="text" class="form-control" required="" name="model" placeholder="Πληκτρολογήστε το μοντέλο">
                                     </div>
                                 </div>
-								<div class="col-md-6">
+								<div class="col-md-3">
                                     <div class="form-group">
                                         <label for="distance">Αριθμός Χιλιομέτρων:</label>
-                                        <input type="text" class="form-control" required="" name="distance" placeholder="Πληκτρολογήστε τον συνολικό αριθμό χιλιομέτρων του αυτοκινήτου σας">
+                                        <input type="number" class="form-control" required="" name="distance" placeholder="Πληκτρολογήστε τον αριθμό χλμ" min="0" max="300000">
+                                        <span class="help-block">Από 0 έως 300000</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-md-3">
-    								<div class="form-group">
-    									<label for="age">Χρονολογία:</label>
-    									<input type="number" class="form-control" name="age" min="1980" max="2016" required="">
-    									<span class="help-block">Από 1980 έως 2016</span>
-    								</div>
+                                    <div class="form-group">
+                                        <label for="age">Χρονολογία:</label>
+                                        <input type="number" class="form-control" name="age" min="1980" max="2016" required="">
+                                        <span class="help-block">Από 1980 έως 2016</span>
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="kivika">Κυβικά:</label>
-			                            <select name="kivika" class="form-control">
-			                                <option value="900-1299">900-1299</option>
-			                                <option value="1300-1599">1300-1599</option>
-			                                <option value="1600-1999">1600-1999</option>
-			                                <option value="2000+">2000+</option>
-			                            </select>
-			                        </div>
+                                        <select name="kivika" class="form-control">
+                                            <option value="900-1299">900-1299</option>
+                                            <option value="1300-1599">1300-1599</option>
+                                            <option value="1600-1999">1600-1999</option>
+                                            <option value="2000+">2000+</option>
+                                        </select>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-3">
 									<div class="form-group">
 										<label for="passengers">Αριθμός Επιβατών:</label>
@@ -161,14 +162,13 @@
 				                        </select>
 									</div>
 								</div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="input-image">Φωτογραφία:</label>
+                                        <input name="input-image" type="file" multiple class="file-loading" accept="image/*">
+                                    </div>
+                                </div>
                             </div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input name="input-image" type="file" multiple class="file-loading" accept="image/*">
-									</div>
-								</div>
-							</div>
 						</div>
 						<div class="modal-header text-right">
                             <button type="input" name="submit" value="newAccount" class="btn btn-success btn-icon">Καταχώρηση</button>
