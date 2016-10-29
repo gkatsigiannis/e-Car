@@ -1330,3 +1330,7 @@ span.round-tab:hover {
 
 #fleet-img > a {right: 30px; bottom: 10px; position: absolute;}
 
+/*navbar*/
+.navbar-collapse {
+  max-height: 490px;
+}
