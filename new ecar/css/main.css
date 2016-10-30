@@ -884,7 +884,7 @@ span.round-tab:hover {
 
 #available-panel > .panel-heading > h4 {color: white;}
 
-#panel-img{height: 100px;}
+.panel-img{height: 100px;}
 
 /*confirmation.html*/
 #success-panel > .panel-heading {background-color: #aec62c;}
