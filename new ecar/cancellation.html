@@ -66,46 +66,52 @@
 			<div class="container">
 	        	<div class="row">
 				 	<div class="col-md-12">
-						<h1>Η κρατηση μου</h1>
+						<h1>Ακυρωση κρατησης</h1>
 					</div>
 			    </div>
 	      	</div>
 	    </div>
 
 	    <!-- Wizard -->
-      	<div class="wizard">
-            <div class="wizard-inner">
-                <div class="connecting-line"></div>
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="disabled">
-                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Συμπλήρωση στοιχείων">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-pencil"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li role="presentation" class="active">
-                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Επιβεβαίωση">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-picture"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li role="presentation" class="disabled">
-                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Ολοκλήρωση">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-ok"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-          	</div>
-      	</div>
+	  	<div class="wizard">
+	        <div class="wizard-inner">
+	            <div class="connecting-line"></div>
+	                <ul class="nav nav-tabs" role="tablist">
+	                    <li role="presentation" class="disabled">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step2" role="tab" title="Συμπλήρωση στοιχείων">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-pencil"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="disabled">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="step3" role="tab" title="Επιβεβαίωση">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-picture"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="active">
+	                        <a href="reservation.html" data-toggle="tab" aria-controls="complete" role="tab" title="Ολοκλήρωση">
+	                            <span class="round-tab">
+	                                <i class="glyphicon glyphicon-ok"></i>
+	                            </span>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	      	</div>
+	    </div>
 
 		<!-- Reservation -->
 		<div class="section">
 		    <div class="container">
+		    	<!-- Danger Message -->
+		    	<div class="panel" id="danger-panel">
+	                <div class="panel-heading text-center">
+	                    <h4>Η κράτηση σας ακυρώθηκε.</h4>
+	                </div>
+	            </div>
 		    	<div class="modal-content">
 	    			<div class="modal-header">
 						<h3 class="modal-title">Στοιχεία Κράτησης</h3>
@@ -126,13 +132,6 @@
 			                   	<p><strong>Αυτοκίνητο: </strong>Smart For Two</p>
 			                   	<br>
 			                   	<h3>Σύνολο: 100€</h3>
-			                   	
-			                   	<div class="row">
-			                   		<div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-6">
-			                   			<a href="cancellation.html" class="btn btn-danger btn-block">Διαγραφή Κράτησης</a>
-			                   		</div>
-			                   	</div>
-			                   	
 			                </div>        
 			            </div>
 			        </div>
@@ -229,7 +228,6 @@
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
-
 		<!-- Script for Wizard -->
 		<script>$(document).ready(function () {
 		    //Initialize tooltips
@@ -267,5 +265,6 @@
 			    $(elem).prev().find('a[data-toggle="tab"]').click();
 			}
 		</script>
+
 	</body>
 </html>
