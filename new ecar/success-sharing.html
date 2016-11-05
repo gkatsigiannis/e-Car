@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+
 <html lang="en">
 
 <head>
@@ -66,46 +70,21 @@
 			<div class="container">
 	        	<div class="row">
 				 	<div class="col-md-12">
-						<h1>Η κρατηση μου</h1>
+						<h1>Επιβεβαιωση καταχωρησης</h1>
 					</div>
 			    </div>
 	      	</div>
 	    </div>
 
-	    <!-- Wizard -->
-      	<div class="wizard">
-            <div class="wizard-inner">
-                <div class="connecting-line"></div>
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="disabled">
-                            <a href="#step2" data-toggle="tab" role="tab" title="Συμπλήρωση στοιχείων">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-pencil"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li role="presentation" class="active">
-                            <a href="#step3" data-toggle="tab" role="tab" title="Επιβεβαίωση">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-picture"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li role="presentation" class="disabled">
-                            <a href="#complete" data-toggle="tab" role="tab" title="Ολοκλήρωση">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-ok"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-          	</div>
-      	</div>
-
-		<!-- Reservation -->
+		<!-- Sucess Message -->
 		<div class="section">
 		    <div class="container">
-		    	<div class="modal-content">
+		    	<div class="panel" id="success-panel">
+	                <div class="panel-heading text-center">
+	                    <h4>Η καταχώρηση σας ολοκληρώθηκε επιτυχώς! Ευχαριστούμε πολύ!</h4>
+	                </div>
+	            </div>
+	            <div class="modal-content">
 	    			<div class="modal-header">
 						<h3 class="modal-title">Στοιχεία Κράτησης</h3>
 					</div>
@@ -115,23 +94,12 @@
 					    		<img src="img/cars/smart.jpg" alt="smart" class="img-responsive">
 					    	</div>
 			            	<div class="col col-md-6">
-			            		<h4><strong>Κωδικός Κράτησης: </strong>000001</h4>
-			                    <p><strong>Κατάστημα Παραλαβής: </strong>Κατάστημα Αεροδρομίου Ελ. Βενιζέλου</p>
-			                   	<p><strong>Κατάστημα Παράδοσης: </strong>Κατάστημα Λιμένα Πειραιά</p>
-			                   	<p><strong>Ημέρα Παραλαβής: </strong>12/11/16</p>
-			                   	<p><strong>Ώρα Παραλαβής: </strong>12:00</p>
-			                   	<p><strong>Ημέρα Παράδοσης: </strong>17/11/16</p>
-			                   	<p><strong>Ώρα Παράδοσης: </strong>12:00</p>
-			                   	<p><strong>Αυτοκίνητο: </strong>Smart For Two</p>
-			                   	<br>
-			                   	<h3>Σύνολο: 100€</h3>
-			                   	
-			                   	<div class="row">
-			                   		<div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-6">
-			                   			<a href="cancellation.html" class="btn btn-danger btn-block">Ακύρωση Κράτησης</a>
-			                   		</div>
-			                   	</div>
-			                   	
+			            		<p><strong>Μάρκα: </strong>Smart</p>
+			                    <p><strong>Μοντέλο: </strong>For Two</p>
+			                   	<p><strong>Χρονολογία: </strong>2015</p>
+			                   	<p><strong>Κυβικά: </strong>900</p>
+			                   	<p><strong>Αριθμός Επιβατών: </strong>2</p>
+			                   	<p><strong>Κιβώτιο Ταχυτήτων: </strong>Αυτόματο</p>
 			                </div>        
 			            </div>
 			        </div>
@@ -214,8 +182,7 @@
         			
         		</div>
         	</div>
-        </div>
-		
+        </div>		
 
         <!-- Javascripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -229,42 +196,5 @@
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
 
-		<!-- Script for Wizard -->
-		<script>$(document).ready(function () {
-		    //Initialize tooltips
-		    $('.nav-tabs > li a[title]').tooltip();
-		    
-		    //Wizard
-		    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-
-		        var $target = $(e.target);
-		    
-		        if ($target.parent().hasClass('disabled')) {
-		            return false;
-		        }
-		    });
-
-		    $(".next-step").click(function (e) {
-
-		        var $active = $('.wizard .nav-tabs li.active');
-		        $active.next().removeClass('disabled');
-		        nextTab($active);
-
-		    });
-		    $(".prev-step").click(function (e) {
-
-		        var $active = $('.wizard .nav-tabs li.active');
-		        prevTab($active);
-
-		    });
-		});
-
-			function nextTab(elem) {
-			    $(elem).next().find('a[data-toggle="tab"]').click();
-			}
-			function prevTab(elem) {
-			    $(elem).prev().find('a[data-toggle="tab"]').click();
-			}
-		</script>
 	</body>
 </html>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+
 <html lang="en">
 
 <head>
@@ -33,7 +37,7 @@
     <body>
         
         <!-- Header -->
-        <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <header class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -83,33 +87,33 @@
     				<div class="modal-header">
 						<h3 class="modal-title">Συμπληρώστε τα πεδία που θέλετε να αλλάξετε</h3>
 					</div>
-					<form action="" method="post">
+					<form method="post">
 						<div class="modal-body">
                             <div class="row">
                                 <div class="col-md-6">
                                    <div class="form-group">
                                        <label for="name">Όνομα:</label>
-                                       <input type="text" class="form-control" required="" name="name" placeholder="Πληκτρολογήστε το όνομα σας">
+                                       <input type="text" class="form-control" required="" id="name" placeholder="Πληκτρολογήστε το όνομα σας">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="surname">Επίθετο:</label>
-                                        <input type="text" class="form-control" required="" name="surname" placeholder="Πληκτρολογήστε το επίθετό σας">
+                                        <input type="text" class="form-control" required="" id="surname" placeholder="Πληκτρολογήστε το επίθετό σας">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
     								<div class="form-group">
-    									<label for="εmail">Email:</label>
-    									<input type="text" class="form-control" required="" name="email" placeholder="Πληκτρολογήστε το email σας">
+    									<label for="email">Email:</label>
+    									<input type="text" class="form-control" required="" id="email" placeholder="Πληκτρολογήστε το email σας">
     								</div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="age">Ηλικία:</label>
-                                        <input type="date" class="form-control" required="" name="age">
+                                        <input type="date" class="form-control" required="" id="age">
                                         <span class="help-block">Ελάχιστο όριο ηλικίας: 21o</span>
                                     </div>
                                 </div>
@@ -118,13 +122,13 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="password">Password:</label>
-										<input type="password" class="form-control" required="" name="password" placeholder="Πληκτρολογήστε το κωδικό σας">
+										<input type="password" class="form-control" required="" id="password" placeholder="Πληκτρολογήστε το κωδικό σας">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="password">Επανάληψη Password:</label>
-										<input type="password" class="form-control" required="" name="password" placeholder="Πληκτρολογήστε ξανά.">
+										<label for="repeatpassword">Επανάληψη Password:</label>
+										<input type="password" class="form-control" required="" id="repeatpassword" placeholder="Πληκτρολογήστε ξανά.">
                                         <span class="help-block"> Οι κωδικοί πρέπει να ταιριάζουν</span>
 									</div>
 								</div>
@@ -153,7 +157,7 @@
                 <div class="row">
                     <div class="col-footer col-xs-12 col-sm-4 col-md-4">
                         <h3>Επικοινωνία</h3>
-                        <b>Διεύθυνση:</b> Αεροδρόμιο "Ελ. Βενιζέλος", Σπάτα 19004<br>
+                        <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Αεροδρόμιο "Ελ. Βενιζέλος", Σπάτα 19004<br>
                         <span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;210-8793569<br>
                         <span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@e-car.gr">&nbsp;&nbsp;info@e-car.gr</a>
                     </div>              
@@ -196,7 +200,7 @@
         			</div>
         			
         			<div class="modal-body">
-	                    <form role="form" action="" method="post" class="login-form">
+	                    <form method="post" class="login-form">
 	                    	<div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">

@@ -904,11 +904,11 @@ span.round-tab:hover {
 }
 
 /*fleet*/
-#fleet-img {background-color: black; color: white; height:90px; width: 100%;}
+.fleet-img {background-color: black; color: white; height:90px; width: 100%;}
 
-#fleet-img > h3 {color: white; margin-bottom:1px; margin-top: 20px;}
+.fleet-img > h3 {color: white; margin-bottom:1px; padding-top: 20px;}
 
-#fleet-img > a {right: 30px; bottom: 10px; position: absolute;}
+.fleet-img > a {right: 30px; bottom: 10px; position: absolute;}
 
 
 .carousel-inner > .item > img {

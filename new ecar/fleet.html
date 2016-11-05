@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+
 <html lang="en">
 
 <head>
@@ -31,7 +35,7 @@
     <body>
         
         <!--Header-->
-	    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+	    <header class="navbar navbar-inverse navbar-fixed-top">
 	        <div class="container">
 	            <div class="navbar-header">
 	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -71,7 +75,7 @@
 		<!--Filters-->
 		<div class="section">
 			<div class="container text-center">
-				<form method="post" action="">
+				<form method="post">
 					<div class="row">
 						<div class="col-xs-4 col-sm-3 col-md-2">
 							<p>Επιλέξτε κατηγορία:</p>
@@ -131,76 +135,75 @@
         <div class="section">
 	    	<div class="container">
 				<div class="row">
-					<ul class="grid cs-style-2">
-				        <div class="col-md-4 col-sm-6">
-							<img src="img/cars/116.jpg" alt="bmw 116" class="img-responsive">
-							<div class="container" id="fleet-img">
-								<h3>BMW 116</h3>
-								<p>Κυβικά: 1600
-									<br>
-									Κλιματισμός: Ναι
-								</p>
-								<a href="116.html" class="btn">Λεπτομέριες</a>	
-							</div>	
-			        	</div>	
-						<div class="col-md-4 col-sm-6">
-							<img src="img/cars/a6.jpg" alt="audi a6" class="img-responsive">
-							<div class="container" id="fleet-img">
-								<h3>Audi A6</h3>
-								<p>Κυβικά: 1800
-									<br>
-									Κλιματισμός: Ναι
-								</p>
-								<a href="a6.html" class="btn">Λεπτομέριες</a>
-							</div>
+					<div class="col-md-4 col-sm-6">
+						<img src="img/cars/116.jpg" alt="bmw 116" class="img-responsive">
+						<div class="container fleet-img">
+							<h3>BMW 116</h3>
+							<p>Κυβικά: 1600
+								<br>
+								Κλιματισμός: Ναι
+							</p>
+							<a href="116.html" class="btn">Λεπτομέριες</a>	
+						</div>	
+		        	</div>	
+					<div class="col-md-4 col-sm-6">
+						<img src="img/cars/a6.jpg" alt="audi a6" class="img-responsive">
+						<div class="container fleet-img">
+							<h3>Audi A6</h3>
+							<p>Κυβικά: 1800
+								<br>
+								Κλιματισμός: Ναι
+							</p>
+							<a href="a6.html" class="btn">Λεπτομέριες</a>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<img src="img/cars/aygo.jpg" alt="toyota aygo" class="img-responsive">
-							<div class="container" id="fleet-img">
-								<h3>Toyota Aygo</h3>
-								<p>Κυβικά: 1000
-									<br>
-									Κλιματισμός: Ναι
-								</p>
-								<a href="aygo.html" class="btn">Λεπτομέριες</a>
-							</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<img src="img/cars/aygo.jpg" alt="toyota aygo" class="img-responsive">
+						<div class="container fleet-img">
+							<h3>Toyota Aygo</h3>
+							<p>Κυβικά: 1000
+								<br>
+								Κλιματισμός: Ναι
+							</p>
+							<a href="aygo.html" class="btn">Λεπτομέριες</a>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<img src="img/cars/smart.jpg" alt="smart" class="img-responsive">
-							<div class="container" id="fleet-img">
-								<h3>Smart</h3>
-								<p>Κυβικά: 900
-									<br>
-									Κλιματισμός: Ναι
-								</p>
-								<a href="smart.html" class="btn">Λεπτομέριες</a>
-							</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<img src="img/cars/smart.jpg" alt="smart" class="img-responsive">
+						<div class="container fleet-img">
+							<h3>Smart</h3>
+							<p>Κυβικά: 900
+								<br>
+								Κλιματισμός: Ναι
+							</p>
+							<a href="smart.html" class="btn">Λεπτομέριες</a>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<img src="img/cars/jimny.jpg" alt="jimny" class="img-responsive">
-							<div class="container" id="fleet-img">
-								<h3>Suzuki Jimny</h3>
-								<span>Κυβικά: 1300
-									<br>
-									Κλιματισμός: Ναι
-								</span>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<img src="img/cars/jimny.jpg" alt="jimny" class="img-responsive">
+						<div class="container fleet-img">
+							<h3>Suzuki Jimny</h3>
+							<p>Κυβικά: 1300
+								<br>
+								Κλιματισμός: Ναι
+							</p>
 								<a href="jimny.html" class="btn">Λεπτομέριες</a>
-							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<img src="img/cars/mii.jpg" alt="seat mii" class="img-responsive">
-							<div class="container" id="fleet-img">
-								<h3>Seat Mii</h3>
-								<p>Κυβικά: 1200
-									<br>
-									Κλιματισμός: Ναι
-								</p>	
-								<a href="mii.html" class="btn">Λεπτομέριες</a>
-							</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<img src="img/cars/mii.jpg" alt="seat mii" class="img-responsive">
+						<div class="container fleet-img">
+							<h3>Seat Mii</h3>
+							<p>Κυβικά: 1200
+								<br>
+								Κλιματισμός: Ναι
+							</p>	
+							<a href="mii.html" class="btn">Λεπτομέριες</a>
 						</div>
-					</ul>
+					</div>
 				</div>
 				
+				<!-- Pagination -->
 				<ul class="pager">
 				  <li><a href="fleet.html">1</a></li>
 				  <li><a href="fleetpage2.html">2</a></li>
@@ -215,7 +218,7 @@
                 <div class="row">
                     <div class="col-footer col-xs-12 col-sm-4 col-md-4">
                         <h3>Επικοινωνία</h3>
-                        <b>Διεύθυνση:</b> Αεροδρόμιο "Ελ. Βενιζέλος", Σπάτα 19004<br>
+                        <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Αεροδρόμιο "Ελ. Βενιζέλος", Σπάτα 19004<br>
                         <span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;210-8793569<br>
                         <span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@e-car.gr">&nbsp;&nbsp;info@e-car.gr</a>
                     </div>              
@@ -258,7 +261,7 @@
         			</div>
         			
         			<div class="modal-body">
-	                    <form role="form" action="" method="post" class="login-form">
+	                    <form method="post" class="login-form">
 	                    	<div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">
