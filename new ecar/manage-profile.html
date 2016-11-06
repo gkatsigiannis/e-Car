@@ -80,14 +80,14 @@
 			</div>
 		</div>
 
-        <!-- Sign-up Form -->
+         <!-- Sign-up Form -->
         <div class="section">
 	    	<div class="container">
 				<div class="modal-content">
     				<div class="modal-header">
-						<h3 class="modal-title">Συμπληρώστε τα πεδία που θέλετε να αλλάξετε</h3>
+						<h3 class="modal-title">Συμπληρώστε τα πεδία</h3>
 					</div>
-					<form method="post">
+					<form action="success-signup.html" method="post">
 						<div class="modal-body">
                             <div class="row">
                                 <div class="col-md-6">
@@ -99,7 +99,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="surname">Επίθετο:</label>
-                                        <input type="text" class="form-control" required="" id="surname" placeholder="Πληκτρολογήστε το επίθετό σας">
+                                        <input type="text" class="form-control" required="" id="surname" placeholder="Πληκτρολογήστε το επίθετό σας" minlength="2">
                                     </div>
                                 </div>
                             </div>
@@ -128,13 +128,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="password">Password:</label>
-										<input type="password" class="form-control" required="" id="password" placeholder="Πληκτρολογήστε το κωδικό σας">
+										<input type="password" class="form-control" required="" id="password" placeholder="Πληκτρολογήστε το κωδικό σας" minlength="8">
+                                        <span class="help-block">Τουλάχιστον 8 χαρακτήρες</span>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="repeatpassword">Επανάληψη Password:</label>
-										<input type="password" class="form-control" required="" id="repeatpassword" placeholder="Πληκτρολογήστε ξανά.">
+										<input type="password" class="form-control" required="" id="repeatpassword" placeholder="Πληκτρολογήστε ξανά." minlength="8">
                                         <span class="help-block"> Οι κωδικοί πρέπει να ταιριάζουν</span>
 									</div>
 								</div>
