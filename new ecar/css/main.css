@@ -927,3 +927,9 @@ span.round-tab:hover {
 /*map*/
 #map {height:400px;}
 
+/*manage-profile-link*/
+.manage-profile-link {
+	font-size: 15px;
+	color: black;
+}
+
